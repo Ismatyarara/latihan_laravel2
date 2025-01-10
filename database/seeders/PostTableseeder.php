@@ -21,6 +21,8 @@ class PostTableseeder extends Seeder
             ['title'=>'Tips Cepat Pintar','content'=>'lorem ipsum'],
             ['title'=>'Harus Menunda Belajar','content'=>'lorem ipsum'],
             ['title'=>'Membangun Visi Misi Kesuksesan','content'=>'lorem ipsum']
+            
+
         ];
 
         DB::table('posts')->insert($posts);

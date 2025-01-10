@@ -1,6 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
+use App\Models\Barangs;
+use App\Http\Controllers\SiswasController;
+use App\Http\Controllers\ppdbsController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -125,3 +130,41 @@ Route::get('latihan/{nama}/{telepon}/{jenisbarang}/{namabarang}/{pembayaran}/{ju
            "============================= <br>" .
            "Total Pembayaran: " . $total_bayar;
 });
+
+
+//routing dengan model
+
+Route::get('/post', [PostController::class, 'menampilkan']);
+
+Route::get('/Barangs', [PostController::class, 'menampilkan2']);
+
+   // $post= Post::all();
+
+  // $post = Post:: where('title','LIKE','%visi%')->get(); //menampilkan berdasarkan kata
+
+  // $post = Post:: where('id',1)->get();  //menampilkan berdasarkan id
+
+    //return view('tampil_post',compact('post'));
+
+
+
+// //barang
+
+// Route::get('/Barangs',function() {
+
+//     //$Barangs= Barangs::all();
+
+//     $Barangs = Barangs:: where('merk','LIKE','%dior%')->get(); 
+
+//     return view('tampil_barang',compact('Barangs'));
+// });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+//crud
+Route:: resource('siswa', SiswasController::class);
+
+//crud ppdb
+Route:: resource('ppdb', ppdbsController::class);
