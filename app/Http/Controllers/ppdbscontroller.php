@@ -89,7 +89,7 @@ class ppdbscontroller extends Controller
      */
     public function update(Request $request, $id)
     {
-        $ppdb =  ppdb::findOrFail($id);
+        $ppdb =  ppdb::findOrFail($id);     
         $ppdb->nama_lengkap = $request->nama_lengkap;
         $ppdb->jenis_kelamin = $request->jenis_kelamin;
         $ppdb->agama = $request->agama;
