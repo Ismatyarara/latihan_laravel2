@@ -72,3 +72,4 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 # Belajar_laravel
 # Belajar_laravel
 # Belajar_laravel
+# latihan_laravel2
