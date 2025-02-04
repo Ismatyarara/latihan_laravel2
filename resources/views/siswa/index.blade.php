@@ -25,6 +25,7 @@
       <th scope="col">Nama</th>
       <th scope="col">Jenis Kelamin</th>
       <th scope="col">Kelas</th>
+      <th scope="col">Cover</th>
       <th scope="col">Action</th>
 
     </tr>
@@ -39,6 +40,10 @@
       <td>{{$data->jenis_kelamin}}</td>
       <td>{{$data->kelas}}</td>
       <td>
+          <img src="{{ asset('/image/siswa/'.$data->cover) }}" width="100" >
+        </td>
+<td>
+       
      
       <form action="{{ route('siswa.destroy', $data->id) }}" method="post">
         @csrf 

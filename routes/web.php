@@ -5,6 +5,24 @@ use App\Http\Controllers\PostController;
 use App\Models\Barangs;
 use App\Http\Controllers\SiswasController;
 use App\Http\Controllers\ppdbsController;
+use App\Http\Controllers\gurusController;
+use App\Http\Controllers\penggunasController;
+use App\Http\Controllers\teleponsController;
+use App\Http\Controllers\kategorisController;
+use App\Http\Controllers\produksController;
+use App\Http\Controllers\productsController;
+use App\Http\Controllers\customersController;
+use App\Http\Controllers\ordersController;
+use App\Http\Controllers\penerbitsController;
+use App\Http\Controllers\genresController;
+use App\Http\Controllers\pembelisController;
+use App\Http\Controllers\bukusController;
+use App\Http\Controllers\transaksisController;
+
+
+
+
+
 
 
 /*
@@ -168,3 +186,42 @@ Route:: resource('siswa', SiswasController::class);
 
 //crud ppdb
 Route:: resource('ppdb', ppdbsController::class);
+
+// //crud guru
+// Route:: resource('guru', gurusController::class);
+
+//crud pengguna
+Route:: resource('pengguna', penggunascontroller::class);
+
+//crud telepon
+Route:: resource('telepon', teleponscontroller::class);
+
+//crud kategori
+Route:: resource('kategori', kategoriscontroller::class);
+
+//crud produk
+Route:: resource('produk', produkscontroller::class);
+
+//crud product
+Route:: resource('product', productscontroller::class);
+
+//crud customer
+Route:: resource('customer', customerscontroller::class);
+
+//crud order
+Route:: resource('order', orderscontroller::class);
+
+//crud penerbit
+Route:: resource('penerbit', penerbitscontroller::class);
+
+//crud genre
+Route:: resource('genre', genrescontroller::class);
+
+//crud pembeli
+Route:: resource('pembeli', pembeliscontroller::class);
+
+//crud buku
+Route:: resource('buku', bukuscontroller::class);
+
+//crud transaksi
+Route:: resource('transaksi', transaksiscontroller::class);
